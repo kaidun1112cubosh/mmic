@@ -1,0 +1,79 @@
+--All Commands--
+clear - Clear logs
+pause - Pause project
+---
+Running DeltaTime Extension
+Type "deltatime fps" for fps
+Type "deltatime dt" for deltatimePress "l" to see both without running the commands
+---
+shutdown - Run the shutdown button command
+restart - Run the restart button command
+runtime - Reset runtime optains
+---
+MediaCentre v1.0 Help---
+mediacentre help : Open help
+mediacentre playpause : Play or pause the player if running
+mediacentre back : Go to the previous file if running
+mediacentre next : Go to the next file if running
+mediacentre hide : Hide the playermediacentre kill : Kill the player
+mediacentre run : Start the player
+mediacentre import : Import files to the storage
+mediacentre export : Export files form the storage
+mediacentre uwu : uwufiy the player ;3
+mediacentre folder : Initiate the folder script
+---MediaCentre v1.0 Help---
+flag - Runs the green flag
+VarEdit - Try out the text engine!
+clearData - DANGEROUS - Clears all MMIC data
+kill - DANGEROUS - Kills the program and returns to launcher
+clear_and_kill - DANGEROUS - Do "clearData" and "kill" one after the other
+help - See this list
+version - See program and servuce versions
+extensions - Get a full list of all extensions installedmessage <message> - Sends the given <message>--All Commands--
+
+ZBIOS v3.1 rev23
+Showing program and plugin info below
+MENGINE 3.0
+SystemUI v3.0
+The MMIC Sound Player v1.1.8b5
+---
+Running MediaCentre v1.0---
+Type mediacentre help for all commands
+ServerManager v0.1
+AccountsManager v0.3
+The Will_Wam Text Engine is installed!
+---
+Running DeltaTime Extension
+Type "deltatime fps" for fps
+Type "deltatime dt" for deltatime
+Press "l" to see both without running the commands
+---
+
+--All extensions--
+PenRuntime (Penguinmod)
+JSON
+Events Expansion
+JavaScript V2 (Unsandboxed)
+Temporary Variables
+Files Expanded
+Popup Phoenix
+Variables Expanded
+Tune Shark V3
+DebuggerCloudLink (Penguinmod)
+Clones++
+Yet Another String Extension (Snail IDE)
+Toast Notifs
+Free Servers
+E2EE
+Runtime (Turbowarp)
+DeltaTime
+Mouse Cursor
+Zip
+Skins
+Notifications
+Storage+
+IFrame
+Makey Makey
+More Events
+Randomly Blocks (Snail IDE)
+--All extensions--
