@@ -1,0 +1,58 @@
+{
+  "version": 2, 
+  "timeFormat": "YYMMDDHHmm",
+  "generated": 260918095934,
+
+  "categories": {
+    "new": [1000],
+    "trending": [],
+    "mostPlayed": [],
+    "recommended": []
+  },
+
+  "audio": [
+    "wav",
+    "flac",
+    "ogg",
+    "mp3",
+    "m4a"
+  ],
+
+  "songs": {
+    "1000": {
+      "title": "Cat Walk",
+      "artist": "kaidun1112studios",
+      "album": "Cat Walk Single",
+      "cover": "covers/singles/1000.png",
+      "audio": {
+        "formats": [
+          "mp3"
+        ],
+        "chunks": 1,
+        "server": "https://mmic-media-server-1.pages.dev",
+        "path": "/audio/1000/"
+      },
+      "duration": "124.029"
+    }
+	
+  },
+  
+  "radios": 2,
+  
+  "radioStation0": {
+		"stationTitle": "MMIC Superplay",
+		"stationDiscription": "The MMIC Sound Player's 24/7 Live Music Stream",
+		"broadcaster": "kaidun1112cubosh",
+		"location": "USA",
+		"currentlyLive": true,
+		"link": "local"
+  },
+  "radioStation1": {
+		"stationTitle": "Local test radio",
+		"stationDiscription": "Test server for local testing",
+		"broadcaster": "yourself",
+		"location": "local",
+		"currentlyLive": true,
+		"link": "ws://localhost:8080"
+  }
+}
