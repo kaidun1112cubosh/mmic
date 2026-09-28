@@ -2,7 +2,7 @@
 
 ## I don't think we need that much of a description. Its self-explanatory, right?
 
-The MMIC Sound Player is a music player created in the graphical programming language of Scratch. As you may already know, Scratch has many mods, most based off of [TurboWarp](https://turbowarp.org/), a simple mod to run Scratch projects faster by running them at higher framerates then Scratch's 30, and by compiling the code to JavaScript, so it's easier for the browser to run. 
+The MMIC Sound Player is a music player created in the graphical programming language of Scratch. As you may already know, Scratch has many mods, most based off of [TurboWarp](https://turbowarp.org/), a simple mod to run Scratch projects faster by running them at higher framerates then Scratch's 30, and by compiling the code to JavaScript, so it's easier for the browser to run. My MMIC Sound Player uses [PenguinMod](https://penguinmod.com) (hence the .pmp files littered everywhere)
 
 The MMIC Sound Player has a whole history on normal Scratch. You can contact me and ask about that if you want. 
 
