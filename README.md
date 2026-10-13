@@ -19,3 +19,6 @@ With MediaCentre, I can effectivity store as many audio file that I want on my c
 So now, the MMIC Sound Player will be a Cloud based, ad free open-source music player that takes no data relating to you, no money, nothing at all. That is the exact opposite of other music streaming platforms like Spotify, YouTube Music, and Apple Music. They make you pay monthly subscriptions or you deal with annoying ads every day. And I know that: "if a program you want doesn't seem to exist, you go ahead and make your own" - PortalRunner).
 
 (Also, I don't think they consider .pmp files code, becuase this is not just in HTML and JavaScript)
+
+Oct 13 note:
+Recently, I added a folder called Webserver, which shows exactly what is going into the [online launcher](https://mmic-media-server-1.pages.dev).
