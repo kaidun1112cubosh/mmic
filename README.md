@@ -22,3 +22,13 @@ So now, the MMIC Sound Player will be a Cloud based, ad free open-source music p
 
 Oct 13 note:
 Recently, I added a folder called Webserver, which shows exactly what is going into the [online launcher](https://mmic-media-server-1.pages.dev).
+
+And if your wondering, the Launcher dev/admin tickets are:
+
+- !!1212KoAsIiDrUiNs1112!! (Combo of me and my friends name)
+- TheGamerExpertGT55 (My bros YT channel)
+- QWZmZWN0aW9u ("Affection" in Base64, referance to the song 'KAT x Aku P - Affection Addiction ft. POPY' a song on my bros "W music" playlist)
+- 000087000104000097000116 ("What" encoded with Prism's Number encoding, created by cs2627883)
+- Imposter Reporter as a Boolean!! ([Randomly blocks](https://snail-ide.js.org/randomlyBlocks.js)'s value of the fake boolean block)
+
+Check every one, as all MMIC Launchers are different. It allows the upload of raw client that are not .mmic clients. That way, you can test the latest project file (if you download the source code on any release or the latest commit)
