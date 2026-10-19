@@ -31,4 +31,4 @@ And if your wondering, the Launcher dev/admin tickets are:
 - 000087000104000097000116 ("What" encoded with Prism's Number encoding, created by cs2627883)
 - Imposter Reporter as a Boolean!! ([Randomly blocks](https://snail-ide.js.org/randomlyBlocks.js)'s value of the fake boolean block)
 
-Check every one, as all are different. It allows the upload of raw client that are not .mmic clients. That way, you can test the latest project file (if you download the source code on any release or the latest commit)
+Check every one, as all MMIC Launchers are different. It allows the upload of raw client that are not .mmic clients. That way, you can test the latest project file (if you download the source code on any release or the latest commit)
