@@ -1,0 +1,9 @@
+MMIC Client Infomation (Recommended for all MMIC clients, offcial and modded alike)
+This client uses MENGINE 3.24.
+The MMIC Sound Player v1.1.8 Beta #8. 
+MediaCentre v1.4i w/ HTTPCloud + MMICLiveRTC.
+IndexServer repo protocal v1.0. 
+SystemUI 1.0.
+This build was made in PenguinMod on Nov 2026. 
+See the GitHub page to find new and old releases, servers, betas, launchers, news, etc. 
+Use the online launcher at https://mmic-media-server-1.pages.dev
