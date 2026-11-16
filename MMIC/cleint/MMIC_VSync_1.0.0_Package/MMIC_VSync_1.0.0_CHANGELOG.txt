@@ -1,0 +1,14 @@
+MMIC V-Sync 1.0.0 — Release notes
+=================================
+
+- Promoted the integrated v0.4.3 source to a production 1.0.0 identity.
+- Preserved the tested renderer scheduler, block interface, HQ Pen behavior,
+  performance counters, and MENGINE fault-reporting interface.
+- Corrected actual WebGL context loss to emit MENGINE severity Level 8, matching
+  MMIC's critical-page-fault / Launcher recovery policy.
+- Kept WebGL context-creation failure, renderer exceptions, RAF scheduler
+  failures, and renderer reattachment failures at Level 5.
+- Kept slow-draw streak and RAF response-delay warnings at Level 3.
+- Did not include the separate Fault Injection Lab in the production extension.
+
+No other intended runtime behavior or Scratch block interface changes.

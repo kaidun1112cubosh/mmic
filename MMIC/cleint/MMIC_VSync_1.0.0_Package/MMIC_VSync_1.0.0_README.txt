@@ -1,0 +1,104 @@
+MMIC V-Sync 1.0.0
+=================
+Production extension release for the MMIC Sound Player (PenguinMod).
+
+SOURCE BASELINE
+---------------
+This release is based directly on the user-supplied
+MMIC_VSync_Prototype_v043_MENGINE_CrashSensors.js file, identified by the user
+as the V-Sync version integrated into the current MMIC Sound Player client.
+It does not incorporate code from later experimental prototypes or the
+separate MMIC Fault Injection Lab.
+
+RELEASE CHANGES
+---------------
+1. Production identity:
+   - Extension display name: MMIC V-Sync 1.0.0
+   - Console prefix: [MMIC V-Sync 1.0.0]
+   - Stable extension ID remains: mmicvsyncoptimized
+2. MENGINE recovery classification:
+   - Actual WebGL context loss now emits WEBGL_CONTEXT_LOST at severity 8.
+   - This applies to all actual context-loss detection paths: the browser event,
+     the pre-draw isContextLost() check, the context-status reporter, and the
+     WebGL-context-lost reporter.
+   - This matches MMIC's MENGINE/Launcher policy: actual WebGL context loss is a
+     critical page fault that must hand recovery to the Launcher.
+3. No other renderer/scheduler or block-interface changes are intended.
+
+PRESERVED BEHAVIOR
+------------------
+- Presentation is scheduled independently with requestAnimationFrame.
+- The project VM scheduler is not modified. Keep MMIC at its configured 240 TPS.
+- Interpolation is neither enabled nor introduced.
+- Renderer.draw requests are coalesced through one pending RAF callback.
+- Canvas resize redraws remain immediate to avoid blank/flickering output.
+- HQ Pen detection remains observational; quality and drawing are unchanged.
+- WebGL context restoration does not automatically resume V-Sync.
+- Graphics faults remain latched until acknowledged; acknowledging a fault does
+  not release the graphics failsafe.
+- The existing 40 Scratch blocks, opcodes, argument names, extension ID, and
+  MENGINE-facing reporters/commands are preserved.
+- No Fault Injection Lab commands or test-only hooks are included.
+
+MENGINE FAULT LEVELS
+--------------------
+Level 3 — POTENTIALLY_SERIOUS
+  - SLOW_DRAW_STREAK
+  - RAF_RESPONSE_DELAY
+
+Level 5 — COMPONENT_FAILURE
+  - WEBGL_CONTEXT_CREATION_FAILED
+  - RENDERER_DRAW_EXCEPTION
+  - RAF_SCHEDULER_FAILED
+  - RENDERER_REATTACH_FAILED
+
+Level 8 — CRITICAL_PAGE_FAULT
+  - WEBGL_CONTEXT_LOST
+
+The extension does not infer Level 7 (critical system/storage fault). MENGINE
+and the Launcher remain responsible for IndexedDB protection, process
+termination, crash-dump handling, restart/shutdown, and user notifications.
+
+INSTALLATION / INTEGRATION
+-------------------------
+1. Keep a backup of the committed MMIC.pmp and packaged client.
+2. Replace the V-Sync extension source in the client with this file; do not load
+   the old prototype and 1.0.0 simultaneously.
+3. Retain the existing MMIC setting and command integration.
+4. Retain the existing MENGINE 10-VM-frame diagnostic polling.
+5. Confirm the editor continues to run with V-Sync disabled, as configured by
+   MMIC. Enable V-Sync in the packaged client.
+6. Check that VM execution remains at the intended 240 TPS and that rendered
+   frame reporting remains separate from VM FPS.
+7. Run the release-candidate checks listed below before publishing.
+
+RELEASE-CANDIDATE CHECKLIST
+---------------------------
+- [ ] Extension loads as unsandboxed JavaScript V2 in the packaged client.
+- [ ] All existing extension blocks appear and respond.
+- [ ] V-Sync enable/disable setting works.
+- [ ] VM rate remains configured independently (240 TPS in MMIC).
+- [ ] Rendered FPS and VM steps are reported separately.
+- [ ] Home, Settings, MediaCentre Local Folder, HTTP Cloud, and MMIC Live Radio
+      behave as in the validated integrated build.
+- [ ] HQ Pen works without quality or drawing regressions.
+- [ ] Audio, guest messages, SystemUI, and other MMIC components remain working.
+- [ ] Resize and visibility changes do not introduce flicker or stale RAF work.
+- [ ] Level 3 performance faults reach MENGINE as warnings.
+- [ ] Level 5 renderer/scheduler faults reach MENGINE as component failures.
+- [ ] Actual WebGL context loss reports WEBGL_CONTEXT_LOST at Level 8 and
+      triggers the established Launcher recovery path.
+- [ ] Crash dump includes Graphics Fault Details JSON and History JSON.
+- [ ] The Launcher locks IndexedDB, terminates client processes, displays the
+      alert when possible, and returns to the Launcher on the established timer.
+- [ ] The Fault Injection Lab is absent from the production build.
+
+IMPORTANT LIMITATIONS
+---------------------
+- A WebGL context-loss event is detectable while page JavaScript is executing.
+  A hard browser/tab process crash cannot be detected or recovered by JavaScript
+  running in that same failed process.
+- Draw duration measures synchronous JavaScript time; it is not total GPU
+  execution time or physical monitor presentation time.
+- This package has been syntax-checked and exercised with a mock runtime. It
+  still requires the user's packaged MMIC/Launcher release-candidate testing.
